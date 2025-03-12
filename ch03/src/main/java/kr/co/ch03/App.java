@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * 날짜 : 2025/03/10
- * 이름 : 김철학
+ * 이름 : 변준영
  * 내용 : ch03. Spring AOP 실습
  *
  * 라이브러리

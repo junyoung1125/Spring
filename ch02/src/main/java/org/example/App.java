@@ -10,7 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * 날짜 : 2025/03/10
- * 이름 : 김철학
+ * 이름 : 변준영
  * 내용 : ch02. Spring IoC/DI 실습하기
  *
  */
