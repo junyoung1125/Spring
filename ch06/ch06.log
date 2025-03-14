@@ -1,0 +1,163 @@
+2025-03-14T09:25:38.415+09:00  INFO 8532 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 8532 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:25:38.425+09:00  INFO 8532 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:25:39.819+09:00  INFO 8532 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:25:40.205+09:00  INFO 8532 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.138 seconds (process running for 3.392)
+2025-03-14T09:25:41.109+09:00  INFO 8532 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:25:41.445+09:00  INFO 8532 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37753b69
+2025-03-14T09:25:41.447+09:00  INFO 8532 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:25:41.537+09:00  INFO 8532 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:25:41.543+09:00  INFO 8532 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:26:40.088+09:00  INFO 13880 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 13880 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:26:40.089+09:00  INFO 13880 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:26:41.434+09:00  INFO 13880 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:26:41.831+09:00  INFO 13880 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.065 seconds (process running for 3.23)
+2025-03-14T09:26:42.693+09:00  INFO 13880 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:26:43.062+09:00  INFO 13880 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@248d2cec
+2025-03-14T09:26:43.065+09:00  INFO 13880 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:26:43.138+09:00  INFO 13880 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:26:43.142+09:00  INFO 13880 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:29:36.250+09:00  INFO 8116 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 8116 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:29:36.252+09:00  INFO 8116 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:29:37.528+09:00  INFO 8116 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:29:37.858+09:00  INFO 8116 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.934 seconds (process running for 3.101)
+2025-03-14T09:29:38.683+09:00  INFO 8116 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:29:38.978+09:00  INFO 8116 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@175957b6
+2025-03-14T09:29:38.981+09:00  INFO 8116 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:29:39.057+09:00  INFO 8116 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:29:39.061+09:00  INFO 8116 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:32:08.939+09:00  INFO 3584 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 3584 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:32:08.941+09:00  INFO 3584 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:32:10.165+09:00  INFO 3584 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:32:10.541+09:00  INFO 3584 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.9 seconds (process running for 3.083)
+2025-03-14T09:32:11.339+09:00  INFO 3584 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:32:11.635+09:00  INFO 3584 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18ac25e6
+2025-03-14T09:32:11.638+09:00  INFO 3584 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:32:11.741+09:00  INFO 3584 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:32:11.746+09:00  INFO 3584 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:32:30.352+09:00  INFO 11744 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 11744 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:32:30.354+09:00  INFO 11744 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:32:31.578+09:00  INFO 11744 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:32:31.920+09:00  INFO 11744 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.863 seconds (process running for 2.999)
+2025-03-14T09:32:32.717+09:00  INFO 11744 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:32:33.008+09:00  INFO 11744 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18ac25e6
+2025-03-14T09:32:33.011+09:00  INFO 11744 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:32:33.098+09:00  INFO 11744 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:32:33.102+09:00  INFO 11744 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:34:45.870+09:00  INFO 4264 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 4264 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:34:45.872+09:00  INFO 4264 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:34:47.090+09:00  INFO 4264 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:34:47.432+09:00  INFO 4264 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.868 seconds (process running for 2.992)
+2025-03-14T09:34:48.204+09:00  INFO 4264 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:34:48.534+09:00  INFO 4264 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e645600
+2025-03-14T09:34:48.536+09:00  INFO 4264 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:34:48.609+09:00  INFO 4264 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:34:48.614+09:00  INFO 4264 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:36:04.260+09:00  INFO 6864 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 6864 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:36:04.262+09:00  INFO 6864 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:36:05.457+09:00  INFO 6864 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:36:05.796+09:00  INFO 6864 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.858 seconds (process running for 2.982)
+2025-03-14T09:36:06.586+09:00  INFO 6864 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:36:06.863+09:00  INFO 6864 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@248d2cec
+2025-03-14T09:36:06.865+09:00  INFO 6864 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:36:06.947+09:00  INFO 6864 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:36:06.951+09:00  INFO 6864 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:38:44.618+09:00  INFO 9416 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 9416 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:38:44.620+09:00  INFO 9416 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:38:45.861+09:00  INFO 9416 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:38:46.233+09:00  INFO 9416 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.901 seconds (process running for 3.051)
+2025-03-14T09:38:47.043+09:00  INFO 9416 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:38:47.354+09:00  INFO 9416 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a504ea7
+2025-03-14T09:38:47.356+09:00  INFO 9416 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:38:47.434+09:00  INFO 9416 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:38:47.439+09:00  INFO 9416 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:41:34.535+09:00  INFO 5128 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 5128 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:41:34.537+09:00  INFO 5128 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:41:35.764+09:00  INFO 5128 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:41:36.110+09:00  INFO 5128 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.866 seconds (process running for 3.015)
+2025-03-14T09:41:36.896+09:00  INFO 5128 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:41:37.200+09:00  INFO 5128 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eda309d
+2025-03-14T09:41:37.202+09:00  INFO 5128 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:41:37.275+09:00  INFO 5128 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:41:37.280+09:00  INFO 5128 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:45:34.007+09:00  INFO 15216 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 15216 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:45:34.009+09:00  INFO 15216 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:45:35.245+09:00  INFO 15216 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:45:35.588+09:00  INFO 15216 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.889 seconds (process running for 3.002)
+2025-03-14T09:45:36.398+09:00  INFO 15216 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:45:36.692+09:00  INFO 15216 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@679f59f1
+2025-03-14T09:45:36.695+09:00  INFO 15216 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:45:36.822+09:00  INFO 15216 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:45:36.869+09:00  INFO 15216 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:47:07.131+09:00  INFO 14932 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 14932 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:47:07.132+09:00  INFO 14932 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:47:08.348+09:00  INFO 14932 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:47:08.689+09:00  INFO 14932 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.842 seconds (process running for 2.979)
+2025-03-14T09:47:09.496+09:00  INFO 14932 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:47:09.778+09:00  INFO 14932 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b7a4930
+2025-03-14T09:47:09.781+09:00  INFO 14932 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:47:09.917+09:00  INFO 14932 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:47:09.957+09:00  INFO 14932 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:06:36.318+09:00  INFO 10632 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 10632 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:06:36.319+09:00  INFO 10632 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:06:37.543+09:00  INFO 10632 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:06:37.885+09:00  INFO 10632 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.882 seconds (process running for 3.012)
+2025-03-14T10:06:38.684+09:00  INFO 10632 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:06:38.984+09:00  INFO 10632 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53d9af1
+2025-03-14T10:06:38.987+09:00  INFO 10632 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:06:39.132+09:00  INFO 10632 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:06:39.173+09:00  INFO 10632 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:07:39.406+09:00  INFO 9716 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 9716 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:07:39.408+09:00  INFO 9716 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:07:40.606+09:00  INFO 9716 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:07:40.940+09:00  INFO 9716 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 1.85 seconds (process running for 2.981)
+2025-03-14T10:07:41.731+09:00  INFO 9716 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:07:42.018+09:00  INFO 9716 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39004e4f
+2025-03-14T10:07:42.020+09:00  INFO 9716 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:07:42.151+09:00  INFO 9716 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:07:42.186+09:00  INFO 9716 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:16:31.278+09:00  INFO 4424 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : Starting User1ServiceTest using Java 17.0.12 with PID 4424 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:16:31.280+09:00  INFO 4424 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:16:32.514+09:00  INFO 4424 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:16:32.857+09:00  INFO 4424 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : Started User1ServiceTest in 1.876 seconds (process running for 3.05)
+2025-03-14T10:16:33.669+09:00  INFO 4424 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:16:33.976+09:00  INFO 4424 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5059d398
+2025-03-14T10:16:33.978+09:00  INFO 4424 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:16:34.055+09:00  INFO 4424 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:16:34.060+09:00  INFO 4424 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:31:06.638+09:00  INFO 7812 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 7812 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:31:06.641+09:00  INFO 7812 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:31:07.820+09:00  INFO 7812 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:31:08.147+09:00  INFO 7812 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:31:08.147+09:00  INFO 7812 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:31:08.149+09:00  INFO 7812 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-14T10:31:08.180+09:00  INFO 7812 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.872 seconds (process running for 3.013)
+2025-03-14T10:34:33.054+09:00  INFO 11584 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 11584 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:34:33.056+09:00  INFO 11584 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:34:34.269+09:00  INFO 11584 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:34:34.603+09:00  INFO 11584 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:34:34.604+09:00  INFO 11584 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:34:34.605+09:00  INFO 11584 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-14T10:34:34.637+09:00  INFO 11584 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.936 seconds (process running for 3.085)
+2025-03-14T10:39:30.927+09:00  INFO 8952 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 8952 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:39:30.929+09:00  INFO 8952 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:39:32.165+09:00  INFO 8952 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:39:32.492+09:00  INFO 8952 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:39:32.492+09:00  INFO 8952 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:39:32.494+09:00  INFO 8952 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-14T10:39:32.528+09:00  INFO 8952 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.955 seconds (process running for 3.125)
+2025-03-14T10:40:58.410+09:00  INFO 432 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 432 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:40:58.411+09:00  INFO 432 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:40:59.599+09:00  INFO 432 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:40:59.933+09:00  INFO 432 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:40:59.933+09:00  INFO 432 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:40:59.934+09:00  INFO 432 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-03-14T10:40:59.966+09:00  INFO 432 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.878 seconds (process running for 3.011)
+2025-03-14T10:41:00.800+09:00  WARN 432 --- [ch06] [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-03-14T10:43:02.043+09:00  INFO 12428 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 12428 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:43:02.045+09:00  INFO 12428 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:43:03.240+09:00  INFO 12428 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:43:03.583+09:00  INFO 12428 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:43:03.584+09:00  INFO 12428 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:43:03.585+09:00  INFO 12428 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-14T10:43:03.624+09:00  INFO 12428 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.903 seconds (process running for 3.012)
+2025-03-14T10:43:04.446+09:00  WARN 12428 --- [ch06] [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
