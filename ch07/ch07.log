@@ -1220,3 +1220,783 @@ org.hibernate.HibernateException: Duplicate row was found and `ASSERT` was speci
 2025-03-17T11:31:15.188+09:00  INFO 4508 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-17T11:31:15.188+09:00  INFO 4508 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
 2025-03-17T11:31:15.191+09:00  INFO 4508 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2025-03-17T14:19:56.332+09:00  INFO 4984 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 4984 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:19:56.333+09:00  INFO 4984 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:19:56.951+09:00  INFO 4984 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:19:57.013+09:00  INFO 4984 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2025-03-17T14:19:57.465+09:00  INFO 4984 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:19:57.530+09:00  INFO 4984 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:19:57.571+09:00  INFO 4984 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:19:57.915+09:00  INFO 4984 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:19:57.954+09:00  INFO 4984 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:19:58.233+09:00  INFO 4984 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e1a3d5a
+2025-03-17T14:19:58.236+09:00  INFO 4984 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:19:58.302+09:00  WARN 4984 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:19:58.326+09:00  INFO 4984 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:19:58.333+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@86377d5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@87220f1)
+2025-03-17T14:19:58.334+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77998ea7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@252d8df6)
+2025-03-17T14:19:58.334+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@36638b59) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2f8f40cc)
+2025-03-17T14:19:58.334+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@14d81f2c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5dd3727c)
+2025-03-17T14:19:58.334+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@774013dc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@229cb4d8)
+2025-03-17T14:19:58.335+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@76e9eed8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@30ef32eb)
+2025-03-17T14:19:58.335+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@474619d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@bb5f9d)
+2025-03-17T14:19:58.335+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@391dfe7c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@702cfbde)
+2025-03-17T14:19:58.336+09:00 DEBUG 4984 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d3bcd3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5dce5c03)
+2025-03-17T14:19:59.148+09:00  INFO 4984 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:19:59.197+09:00  INFO 4984 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:19:59.641+09:00  WARN 4984 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:19:59.666+09:00  INFO 4984 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:20:00.086+09:00  INFO 4984 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.066 seconds (process running for 5.245)
+2025-03-17T14:20:00.745+09:00  INFO 4984 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:20:00.748+09:00  INFO 4984 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:20:00.760+09:00  INFO 4984 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:21:31.853+09:00  INFO 8760 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 8760 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:21:31.855+09:00  INFO 8760 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:21:32.474+09:00  INFO 8760 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:21:32.545+09:00  INFO 8760 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-03-17T14:21:32.980+09:00  INFO 8760 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:21:33.040+09:00  INFO 8760 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:21:33.076+09:00  INFO 8760 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:21:33.431+09:00  INFO 8760 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:21:33.468+09:00  INFO 8760 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:21:33.751+09:00  INFO 8760 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54496c2d
+2025-03-17T14:21:33.755+09:00  INFO 8760 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:21:33.811+09:00  WARN 8760 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:21:33.835+09:00  INFO 8760 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:21:33.841+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@37fca349) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@86377d5)
+2025-03-17T14:21:33.841+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@87220f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77998ea7)
+2025-03-17T14:21:33.841+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@252d8df6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@36638b59)
+2025-03-17T14:21:33.842+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f8f40cc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@14d81f2c)
+2025-03-17T14:21:33.842+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5dd3727c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@774013dc)
+2025-03-17T14:21:33.842+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@229cb4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@76e9eed8)
+2025-03-17T14:21:33.842+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@30ef32eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@474619d9)
+2025-03-17T14:21:33.843+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@bb5f9d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@391dfe7c)
+2025-03-17T14:21:33.843+09:00 DEBUG 8760 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@702cfbde) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7d3bcd3)
+2025-03-17T14:21:34.652+09:00  INFO 8760 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:21:34.698+09:00  INFO 8760 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:21:35.146+09:00  WARN 8760 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:21:35.170+09:00  INFO 8760 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:21:35.550+09:00  INFO 8760 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.019 seconds (process running for 5.17)
+2025-03-17T14:21:36.165+09:00  INFO 8760 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:21:36.167+09:00  INFO 8760 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:21:36.174+09:00  INFO 8760 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:23:03.074+09:00  INFO 8220 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 8220 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:23:03.076+09:00  INFO 8220 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:23:03.681+09:00  INFO 8220 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:23:03.753+09:00  INFO 8220 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-03-17T14:23:04.209+09:00  INFO 8220 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:23:04.272+09:00  INFO 8220 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:23:04.311+09:00  INFO 8220 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:23:04.663+09:00  INFO 8220 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:23:04.700+09:00  INFO 8220 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:23:05.005+09:00  INFO 8220 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@352c3d70
+2025-03-17T14:23:05.008+09:00  INFO 8220 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:23:05.053+09:00  WARN 8220 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:23:05.072+09:00  INFO 8220 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:23:05.080+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@474619d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@bb5f9d)
+2025-03-17T14:23:05.080+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@391dfe7c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@702cfbde)
+2025-03-17T14:23:05.081+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d3bcd3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5dce5c03)
+2025-03-17T14:23:05.082+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@b76b7d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c135f63)
+2025-03-17T14:23:05.082+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@63c4d16) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@29bd2796)
+2025-03-17T14:23:05.082+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@174b8d0e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@112530c3)
+2025-03-17T14:23:05.082+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75959b0c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@355493bf)
+2025-03-17T14:23:05.083+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ebc5be6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4627dfda)
+2025-03-17T14:23:05.083+09:00 DEBUG 8220 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f3361e9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@eebc0db)
+2025-03-17T14:23:05.875+09:00  INFO 8220 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:23:05.922+09:00  INFO 8220 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:23:06.374+09:00  WARN 8220 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:23:06.399+09:00  INFO 8220 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:23:06.793+09:00  INFO 8220 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.051 seconds (process running for 5.19)
+2025-03-17T14:23:07.449+09:00  INFO 8220 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:23:07.453+09:00  INFO 8220 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:23:07.461+09:00  INFO 8220 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:37:03.850+09:00  INFO 7732 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 7732 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:37:03.852+09:00  INFO 7732 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:37:04.442+09:00  INFO 7732 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:37:04.518+09:00  INFO 7732 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-03-17T14:37:04.982+09:00  INFO 7732 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:37:05.044+09:00  INFO 7732 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:37:05.084+09:00  INFO 7732 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:37:05.426+09:00  INFO 7732 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:37:05.464+09:00  INFO 7732 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:37:05.744+09:00  INFO 7732 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7962a746
+2025-03-17T14:37:05.746+09:00  INFO 7732 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:37:05.805+09:00  WARN 7732 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:37:05.826+09:00  INFO 7732 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:37:05.835+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa)
+2025-03-17T14:37:05.836+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda)
+2025-03-17T14:37:05.836+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a)
+2025-03-17T14:37:05.837+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:37:05.837+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:37:05.837+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6774f264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2299f6d7)
+2025-03-17T14:37:05.837+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5cd701e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c9151c1)
+2025-03-17T14:37:05.838+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c3679e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41f40dfa)
+2025-03-17T14:37:05.838+09:00 DEBUG 7732 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2548fc01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4331be30)
+2025-03-17T14:37:06.658+09:00  INFO 7732 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:37:06.704+09:00  INFO 7732 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:37:07.172+09:00  WARN 7732 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:37:07.194+09:00  INFO 7732 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:37:07.577+09:00  INFO 7732 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.032 seconds (process running for 5.184)
+2025-03-17T14:37:08.276+09:00  INFO 7732 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:37:08.278+09:00  INFO 7732 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:37:08.286+09:00  INFO 7732 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:37:29.212+09:00  INFO 7432 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 7432 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:37:29.214+09:00  INFO 7432 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:37:29.817+09:00  INFO 7432 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:37:29.881+09:00  INFO 7432 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-03-17T14:37:30.341+09:00  INFO 7432 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:37:30.403+09:00  INFO 7432 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:37:30.442+09:00  INFO 7432 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:37:30.777+09:00  INFO 7432 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:37:30.816+09:00  INFO 7432 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:37:31.102+09:00  INFO 7432 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cc90398
+2025-03-17T14:37:31.105+09:00  INFO 7432 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:37:31.160+09:00  WARN 7432 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:37:31.182+09:00  INFO 7432 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:37:31.190+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75)
+2025-03-17T14:37:31.191+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5a1c7619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20a946d9)
+2025-03-17T14:37:31.191+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2b41b8bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cadd4d4)
+2025-03-17T14:37:31.191+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016)
+2025-03-17T14:37:31.192+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@396f2724) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9)
+2025-03-17T14:37:31.192+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8)
+2025-03-17T14:37:31.192+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927)
+2025-03-17T14:37:31.193+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@24e1e90a)
+2025-03-17T14:37:31.193+09:00 DEBUG 7432 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e)
+2025-03-17T14:37:31.962+09:00  INFO 7432 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:37:32.006+09:00  INFO 7432 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:37:32.489+09:00  WARN 7432 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:37:32.515+09:00  INFO 7432 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:37:32.893+09:00  INFO 7432 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 3.987 seconds (process running for 5.17)
+2025-03-17T14:37:33.502+09:00  INFO 7432 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:37:33.504+09:00  INFO 7432 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:37:33.511+09:00  INFO 7432 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:38:43.137+09:00  INFO 7516 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 7516 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:38:43.139+09:00  INFO 7516 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:38:43.772+09:00  INFO 7516 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:38:43.837+09:00  INFO 7516 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-03-17T14:38:44.273+09:00  INFO 7516 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:38:44.333+09:00  INFO 7516 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:38:44.369+09:00  INFO 7516 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:38:44.700+09:00  INFO 7516 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:38:44.741+09:00  INFO 7516 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:38:45.027+09:00  INFO 7516 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a7f9d45
+2025-03-17T14:38:45.029+09:00  INFO 7516 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:38:45.084+09:00  WARN 7516 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:38:45.106+09:00  INFO 7516 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:38:45.115+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda)
+2025-03-17T14:38:45.116+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a)
+2025-03-17T14:38:45.116+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1feb586d)
+2025-03-17T14:38:45.116+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:38:45.117+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6774f264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2299f6d7)
+2025-03-17T14:38:45.117+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5cd701e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c9151c1)
+2025-03-17T14:38:45.117+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c3679e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41f40dfa)
+2025-03-17T14:38:45.118+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2548fc01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4331be30)
+2025-03-17T14:38:45.118+09:00 DEBUG 7516 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5cd71ee2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3dad535f)
+2025-03-17T14:38:45.924+09:00  INFO 7516 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:38:45.970+09:00  INFO 7516 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:38:46.450+09:00  WARN 7516 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:38:46.474+09:00  INFO 7516 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:38:46.882+09:00  INFO 7516 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.079 seconds (process running for 5.242)
+2025-03-17T14:38:47.544+09:00  INFO 7516 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:38:47.545+09:00  INFO 7516 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:38:47.553+09:00  INFO 7516 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:39:20.173+09:00  INFO 8160 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 8160 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:39:20.175+09:00  INFO 8160 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:39:20.773+09:00  INFO 8160 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:39:20.843+09:00  INFO 8160 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-03-17T14:39:21.275+09:00  INFO 8160 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:39:21.338+09:00  INFO 8160 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:39:21.374+09:00  INFO 8160 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:39:21.706+09:00  INFO 8160 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:39:21.744+09:00  INFO 8160 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:39:22.038+09:00  INFO 8160 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cdb5974
+2025-03-17T14:39:22.040+09:00  INFO 8160 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:39:22.095+09:00  WARN 8160 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:39:22.117+09:00  INFO 8160 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:39:22.124+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2b41b8bb)
+2025-03-17T14:39:22.125+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cadd4d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7538cfe6)
+2025-03-17T14:39:22.125+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f4dd016) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@396f2724)
+2025-03-17T14:39:22.126+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8)
+2025-03-17T14:39:22.126+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@199806aa)
+2025-03-17T14:39:22.126+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fa11fda)
+2025-03-17T14:39:22.127+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7d95166a)
+2025-03-17T14:39:22.127+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:39:22.127+09:00 DEBUG 8160 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:39:22.925+09:00  INFO 8160 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:39:22.971+09:00  INFO 8160 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:39:23.424+09:00  WARN 8160 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:39:23.449+09:00  INFO 8160 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:39:23.829+09:00  INFO 8160 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 3.963 seconds (process running for 5.108)
+2025-03-17T14:39:24.449+09:00  INFO 8160 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:39:24.452+09:00  INFO 8160 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:39:24.463+09:00  INFO 8160 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:39:37.776+09:00  INFO 10340 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 10340 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:39:37.778+09:00  INFO 10340 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:39:38.395+09:00  INFO 10340 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:39:38.466+09:00  INFO 10340 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-03-17T14:39:38.921+09:00  INFO 10340 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:39:38.982+09:00  INFO 10340 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:39:39.017+09:00  INFO 10340 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:39:39.348+09:00  INFO 10340 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:39:39.388+09:00  INFO 10340 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:39:39.681+09:00  INFO 10340 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41f7c02d
+2025-03-17T14:39:39.684+09:00  INFO 10340 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:39:39.742+09:00  WARN 10340 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:39:39.762+09:00  INFO 10340 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:39:39.772+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@484302ee) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39)
+2025-03-17T14:39:39.773+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67)
+2025-03-17T14:39:39.774+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75)
+2025-03-17T14:39:39.774+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9)
+2025-03-17T14:39:39.774+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4)
+2025-03-17T14:39:39.775+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016)
+2025-03-17T14:39:39.775+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@396f2724) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9)
+2025-03-17T14:39:39.776+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@28b2e4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8)
+2025-03-17T14:39:39.776+09:00 DEBUG 10340 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927)
+2025-03-17T14:39:40.586+09:00  INFO 10340 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:39:40.632+09:00  INFO 10340 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:39:41.092+09:00  WARN 10340 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:39:41.117+09:00  INFO 10340 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:39:41.493+09:00  INFO 10340 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.036 seconds (process running for 5.215)
+2025-03-17T14:39:42.159+09:00  INFO 10340 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:39:42.163+09:00  INFO 10340 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:39:42.172+09:00  INFO 10340 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:40:04.165+09:00  INFO 2836 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 2836 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:40:04.167+09:00  INFO 2836 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:40:04.763+09:00  INFO 2836 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:40:04.837+09:00  INFO 2836 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-03-17T14:40:05.277+09:00  INFO 2836 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:40:05.341+09:00  INFO 2836 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:40:05.377+09:00  INFO 2836 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:40:05.721+09:00  INFO 2836 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:40:05.758+09:00  INFO 2836 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:40:06.042+09:00  INFO 2836 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44485db
+2025-03-17T14:40:06.046+09:00  INFO 2836 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:40:06.109+09:00  WARN 2836 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:40:06.129+09:00  INFO 2836 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:40:06.138+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ebc5be6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4627dfda)
+2025-03-17T14:40:06.138+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f3361e9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@eebc0db)
+2025-03-17T14:40:06.139+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1214c98b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ab50d1c)
+2025-03-17T14:40:06.139+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6e0d058a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3eb0fd88)
+2025-03-17T14:40:06.139+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@adc3344) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@484302ee)
+2025-03-17T14:40:06.140+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4e647f39) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@778197c0)
+2025-03-17T14:40:06.140+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c28f97e)
+2025-03-17T14:40:06.140+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619)
+2025-03-17T14:40:06.141+09:00 DEBUG 2836 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb)
+2025-03-17T14:40:06.939+09:00  INFO 2836 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:40:06.984+09:00  INFO 2836 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:40:07.449+09:00  WARN 2836 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:40:07.473+09:00  INFO 2836 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:40:07.851+09:00  INFO 2836 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.0 seconds (process running for 5.176)
+2025-03-17T14:40:08.470+09:00  INFO 2836 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:40:08.472+09:00  INFO 2836 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:40:08.479+09:00  INFO 2836 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:40:45.563+09:00  INFO 11528 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 11528 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:40:45.565+09:00  INFO 11528 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:40:46.169+09:00  INFO 11528 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:40:46.237+09:00  INFO 11528 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-03-17T14:40:46.685+09:00  INFO 11528 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:40:46.746+09:00  INFO 11528 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:40:46.783+09:00  INFO 11528 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:40:47.127+09:00  INFO 11528 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:40:47.165+09:00  INFO 11528 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:40:47.454+09:00  INFO 11528 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7962a746
+2025-03-17T14:40:47.457+09:00  INFO 11528 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:40:47.512+09:00  WARN 11528 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:40:47.532+09:00  INFO 11528 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:40:47.541+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa)
+2025-03-17T14:40:47.542+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda)
+2025-03-17T14:40:47.543+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a)
+2025-03-17T14:40:47.543+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:40:47.543+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:40:47.544+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6774f264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2299f6d7)
+2025-03-17T14:40:47.544+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5cd701e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c9151c1)
+2025-03-17T14:40:47.544+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c3679e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41f40dfa)
+2025-03-17T14:40:47.544+09:00 DEBUG 11528 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2548fc01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4331be30)
+2025-03-17T14:40:48.336+09:00  INFO 11528 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:40:48.380+09:00  INFO 11528 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:40:48.845+09:00  WARN 11528 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:40:48.871+09:00  INFO 11528 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:40:49.261+09:00  INFO 11528 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.006 seconds (process running for 5.216)
+2025-03-17T14:40:49.905+09:00  INFO 11528 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:40:49.908+09:00  INFO 11528 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:40:49.916+09:00  INFO 11528 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:41:16.931+09:00  INFO 9088 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 9088 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:41:16.932+09:00  INFO 9088 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:41:17.520+09:00  INFO 9088 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:41:17.589+09:00  INFO 9088 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-03-17T14:41:18.027+09:00  INFO 9088 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:41:18.090+09:00  INFO 9088 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:41:18.128+09:00  INFO 9088 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:41:18.463+09:00  INFO 9088 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:41:18.501+09:00  INFO 9088 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:41:18.784+09:00  INFO 9088 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7962a746
+2025-03-17T14:41:18.787+09:00  INFO 9088 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:41:18.841+09:00  WARN 9088 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:41:18.861+09:00  INFO 9088 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:41:18.870+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa)
+2025-03-17T14:41:18.870+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda)
+2025-03-17T14:41:18.871+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a)
+2025-03-17T14:41:18.871+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:41:18.871+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:41:18.872+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6774f264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2299f6d7)
+2025-03-17T14:41:18.872+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5cd701e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c9151c1)
+2025-03-17T14:41:18.872+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c3679e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41f40dfa)
+2025-03-17T14:41:18.873+09:00 DEBUG 9088 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2548fc01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4331be30)
+2025-03-17T14:41:19.684+09:00  INFO 9088 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:41:19.733+09:00  INFO 9088 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:41:20.210+09:00  WARN 9088 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:41:20.234+09:00  INFO 9088 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:41:20.617+09:00  INFO 9088 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.005 seconds (process running for 5.161)
+2025-03-17T14:41:21.296+09:00  INFO 9088 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:41:21.298+09:00  INFO 9088 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:41:21.305+09:00  INFO 9088 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:41:42.231+09:00  INFO 16500 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 16500 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:41:42.233+09:00  INFO 16500 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:41:42.838+09:00  INFO 16500 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:41:42.906+09:00  INFO 16500 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-03-17T14:41:43.365+09:00  INFO 16500 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:41:43.425+09:00  INFO 16500 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:41:43.462+09:00  INFO 16500 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:41:43.802+09:00  INFO 16500 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:41:43.835+09:00  INFO 16500 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:41:44.112+09:00  INFO 16500 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41f7c02d
+2025-03-17T14:41:44.115+09:00  INFO 16500 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:41:44.166+09:00  WARN 16500 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:41:44.190+09:00  INFO 16500 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:41:44.199+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@484302ee) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39)
+2025-03-17T14:41:44.200+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67)
+2025-03-17T14:41:44.200+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75)
+2025-03-17T14:41:44.200+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9)
+2025-03-17T14:41:44.200+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4)
+2025-03-17T14:41:44.201+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016)
+2025-03-17T14:41:44.201+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@396f2724) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9)
+2025-03-17T14:41:44.201+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@28b2e4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8)
+2025-03-17T14:41:44.202+09:00 DEBUG 16500 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927)
+2025-03-17T14:41:45.015+09:00  INFO 16500 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:41:45.062+09:00  INFO 16500 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:41:45.526+09:00  WARN 16500 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:41:45.552+09:00  INFO 16500 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:41:45.945+09:00  INFO 16500 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.022 seconds (process running for 5.15)
+2025-03-17T14:41:46.573+09:00  INFO 16500 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:41:46.576+09:00  INFO 16500 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:41:46.584+09:00  INFO 16500 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:42:04.054+09:00  INFO 4232 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 4232 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:42:04.055+09:00  INFO 4232 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:42:04.650+09:00  INFO 4232 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:42:04.715+09:00  INFO 4232 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-03-17T14:42:05.158+09:00  INFO 4232 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:42:05.218+09:00  INFO 4232 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:42:05.255+09:00  INFO 4232 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:42:05.584+09:00  INFO 4232 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:42:05.624+09:00  INFO 4232 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:42:05.908+09:00  INFO 4232 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41f7c02d
+2025-03-17T14:42:05.910+09:00  INFO 4232 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:42:05.969+09:00  WARN 4232 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:42:05.991+09:00  INFO 4232 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:42:05.999+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@484302ee) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39)
+2025-03-17T14:42:06.000+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67)
+2025-03-17T14:42:06.000+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75)
+2025-03-17T14:42:06.001+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9)
+2025-03-17T14:42:06.001+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4)
+2025-03-17T14:42:06.001+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016)
+2025-03-17T14:42:06.002+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@396f2724) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9)
+2025-03-17T14:42:06.002+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@28b2e4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8)
+2025-03-17T14:42:06.002+09:00 DEBUG 4232 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927)
+2025-03-17T14:42:06.808+09:00  INFO 4232 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:42:06.851+09:00  INFO 4232 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:42:07.320+09:00  WARN 4232 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:42:07.346+09:00  INFO 4232 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:42:07.732+09:00  INFO 4232 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 3.981 seconds (process running for 5.172)
+2025-03-17T14:42:08.420+09:00  INFO 4232 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:42:08.423+09:00  INFO 4232 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:42:08.430+09:00  INFO 4232 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:42:50.788+09:00  INFO 13656 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 13656 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:42:50.790+09:00  INFO 13656 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:42:51.383+09:00  INFO 13656 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:42:51.449+09:00  INFO 13656 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-03-17T14:42:51.883+09:00  INFO 13656 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:42:51.943+09:00  INFO 13656 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:42:51.981+09:00  INFO 13656 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:42:52.321+09:00  INFO 13656 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:42:52.360+09:00  INFO 13656 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:42:52.639+09:00  INFO 13656 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41f7c02d
+2025-03-17T14:42:52.641+09:00  INFO 13656 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:42:52.698+09:00  WARN 13656 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:42:52.720+09:00  INFO 13656 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:42:52.730+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@484302ee) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39)
+2025-03-17T14:42:52.730+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67)
+2025-03-17T14:42:52.731+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75)
+2025-03-17T14:42:52.731+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9)
+2025-03-17T14:42:52.731+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4)
+2025-03-17T14:42:52.732+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016)
+2025-03-17T14:42:52.732+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@396f2724) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9)
+2025-03-17T14:42:52.732+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@28b2e4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8)
+2025-03-17T14:42:52.732+09:00 DEBUG 13656 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927)
+2025-03-17T14:42:53.552+09:00  INFO 13656 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:42:53.600+09:00  INFO 13656 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:42:54.076+09:00  WARN 13656 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:42:54.099+09:00  INFO 13656 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:42:54.464+09:00  INFO 13656 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 3.993 seconds (process running for 5.139)
+2025-03-17T14:42:55.104+09:00  INFO 13656 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:42:55.107+09:00  INFO 13656 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:42:55.114+09:00  INFO 13656 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:43:16.384+09:00  INFO 1772 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 1772 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:43:16.386+09:00  INFO 1772 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:43:17.006+09:00  INFO 1772 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:43:17.073+09:00  INFO 1772 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-03-17T14:43:17.516+09:00  INFO 1772 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:43:17.573+09:00  INFO 1772 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:43:17.607+09:00  INFO 1772 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:43:17.960+09:00  INFO 1772 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:43:18.006+09:00  INFO 1772 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:43:18.290+09:00  INFO 1772 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7962a746
+2025-03-17T14:43:18.293+09:00  INFO 1772 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:43:18.347+09:00  WARN 1772 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:43:18.370+09:00  INFO 1772 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:43:18.378+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa)
+2025-03-17T14:43:18.379+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda)
+2025-03-17T14:43:18.379+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a)
+2025-03-17T14:43:18.379+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:43:18.380+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:43:18.380+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6774f264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2299f6d7)
+2025-03-17T14:43:18.380+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5cd701e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c9151c1)
+2025-03-17T14:43:18.380+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c3679e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41f40dfa)
+2025-03-17T14:43:18.381+09:00 DEBUG 1772 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2548fc01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4331be30)
+2025-03-17T14:43:19.199+09:00  INFO 1772 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:43:19.244+09:00  INFO 1772 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:43:19.715+09:00  WARN 1772 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:43:19.740+09:00  INFO 1772 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:43:20.128+09:00  INFO 1772 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.057 seconds (process running for 5.193)
+2025-03-17T14:43:20.737+09:00  INFO 1772 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:43:20.740+09:00  INFO 1772 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:43:20.747+09:00  INFO 1772 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:43:49.099+09:00  INFO 6260 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 6260 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:43:49.101+09:00  INFO 6260 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:43:49.698+09:00  INFO 6260 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:43:49.763+09:00  INFO 6260 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-03-17T14:43:50.210+09:00  INFO 6260 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:43:50.270+09:00  INFO 6260 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:43:50.306+09:00  INFO 6260 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:43:50.630+09:00  INFO 6260 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:43:50.668+09:00  INFO 6260 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:43:50.963+09:00  INFO 6260 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cdb5974
+2025-03-17T14:43:50.965+09:00  INFO 6260 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:43:51.018+09:00  WARN 6260 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:43:51.038+09:00  INFO 6260 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:43:51.049+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2b41b8bb)
+2025-03-17T14:43:51.050+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cadd4d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7538cfe6)
+2025-03-17T14:43:51.050+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f4dd016) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@396f2724)
+2025-03-17T14:43:51.050+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8)
+2025-03-17T14:43:51.051+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@199806aa)
+2025-03-17T14:43:51.051+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fa11fda)
+2025-03-17T14:43:51.051+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7d95166a)
+2025-03-17T14:43:51.051+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:43:51.052+09:00 DEBUG 6260 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:43:51.877+09:00  INFO 6260 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:43:51.922+09:00  INFO 6260 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:43:52.403+09:00  WARN 6260 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:43:52.428+09:00  INFO 6260 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:43:52.804+09:00  INFO 6260 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.014 seconds (process running for 5.18)
+2025-03-17T14:43:53.449+09:00  INFO 6260 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:43:53.452+09:00  INFO 6260 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:43:53.460+09:00  INFO 6260 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:44:09.898+09:00  INFO 3752 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 3752 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:44:09.901+09:00  INFO 3752 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:44:10.486+09:00  INFO 3752 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:44:10.551+09:00  INFO 3752 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-03-17T14:44:10.994+09:00  INFO 3752 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:44:11.053+09:00  INFO 3752 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:44:11.095+09:00  INFO 3752 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:44:11.428+09:00  INFO 3752 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:44:11.464+09:00  INFO 3752 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:44:11.741+09:00  INFO 3752 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7962a746
+2025-03-17T14:44:11.744+09:00  INFO 3752 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:44:11.807+09:00  WARN 3752 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:44:11.828+09:00  INFO 3752 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:44:11.836+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa)
+2025-03-17T14:44:11.836+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda)
+2025-03-17T14:44:11.837+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a)
+2025-03-17T14:44:11.837+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1feb586d)
+2025-03-17T14:44:11.837+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34695b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@611a2d82)
+2025-03-17T14:44:11.837+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6774f264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2299f6d7)
+2025-03-17T14:44:11.838+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5cd701e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c9151c1)
+2025-03-17T14:44:11.838+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c3679e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41f40dfa)
+2025-03-17T14:44:11.838+09:00 DEBUG 3752 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2548fc01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4331be30)
+2025-03-17T14:44:12.636+09:00  INFO 3752 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:44:12.683+09:00  INFO 3752 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:44:13.151+09:00  WARN 3752 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:44:13.175+09:00  INFO 3752 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:44:13.549+09:00  INFO 3752 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 3.965 seconds (process running for 5.114)
+2025-03-17T14:44:14.228+09:00  INFO 3752 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:44:14.230+09:00  INFO 3752 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:44:14.237+09:00  INFO 3752 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T14:44:29.520+09:00  INFO 15584 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 15584 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T14:44:29.522+09:00  INFO 15584 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T14:44:30.141+09:00  INFO 15584 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T14:44:30.209+09:00  INFO 15584 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-03-17T14:44:30.647+09:00  INFO 15584 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T14:44:30.701+09:00  INFO 15584 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T14:44:30.739+09:00  INFO 15584 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T14:44:31.074+09:00  INFO 15584 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T14:44:31.112+09:00  INFO 15584 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T14:44:31.399+09:00  INFO 15584 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66314fee
+2025-03-17T14:44:31.401+09:00  INFO 15584 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T14:44:31.448+09:00  WARN 15584 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T14:44:31.467+09:00  INFO 15584 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T14:44:31.477+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0)
+2025-03-17T14:44:31.477+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e)
+2025-03-17T14:44:31.477+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5a1c7619)
+2025-03-17T14:44:31.477+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb)
+2025-03-17T14:44:31.478+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6)
+2025-03-17T14:44:31.478+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@396f2724)
+2025-03-17T14:44:31.478+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b465fa9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8)
+2025-03-17T14:44:31.478+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@199806aa)
+2025-03-17T14:44:31.479+09:00 DEBUG 15584 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fa11fda)
+2025-03-17T14:44:32.268+09:00  INFO 15584 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T14:44:32.314+09:00  INFO 15584 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:44:32.765+09:00  WARN 15584 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T14:44:32.788+09:00  INFO 15584 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T14:44:33.162+09:00  INFO 15584 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 3.947 seconds (process running for 5.107)
+2025-03-17T14:44:33.791+09:00  INFO 15584 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T14:44:33.794+09:00  INFO 15584 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T14:44:33.804+09:00  INFO 15584 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T15:14:14.599+09:00  INFO 948 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 948 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T15:14:14.601+09:00  INFO 948 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T15:14:15.226+09:00  INFO 948 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T15:14:15.300+09:00  INFO 948 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2025-03-17T15:14:15.756+09:00  INFO 948 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T15:14:15.818+09:00  INFO 948 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T15:14:15.858+09:00  INFO 948 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T15:14:16.198+09:00  INFO 948 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T15:14:16.234+09:00  INFO 948 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T15:14:16.529+09:00  INFO 948 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380e33c2
+2025-03-17T15:14:16.533+09:00  INFO 948 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T15:14:16.591+09:00  WARN 948 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T15:14:16.621+09:00  INFO 948 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T15:14:16.632+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3dad535f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5f67181f)
+2025-03-17T15:14:16.633+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1169fdfd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75add13c)
+2025-03-17T15:14:16.633+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@224d537d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@450d10cb)
+2025-03-17T15:14:16.633+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1bd59b82) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6a9df5)
+2025-03-17T15:14:16.633+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@48f4f03e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65d23aa3)
+2025-03-17T15:14:16.634+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@52eca410) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@63d0e8d)
+2025-03-17T15:14:16.634+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@69a76b74) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1dd443c1)
+2025-03-17T15:14:16.634+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2aafa84f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@448892f1)
+2025-03-17T15:14:16.634+09:00 DEBUG 948 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1626bddf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@29532e91)
+2025-03-17T15:14:17.486+09:00  INFO 948 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T15:14:17.579+09:00  INFO 948 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T15:14:17.912+09:00  INFO 948 --- [ch07] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-17T15:14:18.668+09:00  WARN 948 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T15:14:18.691+09:00  INFO 948 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T15:14:19.080+09:00  INFO 948 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.789 seconds (process running for 5.97)
+2025-03-17T15:14:19.690+09:00  INFO 948 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T15:14:19.692+09:00  INFO 948 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T15:14:19.700+09:00  INFO 948 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T15:15:00.562+09:00  INFO 15308 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 15308 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T15:15:00.564+09:00  INFO 15308 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T15:15:01.188+09:00  INFO 15308 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T15:15:01.254+09:00  INFO 15308 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-03-17T15:15:01.711+09:00  INFO 15308 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T15:15:01.774+09:00  INFO 15308 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T15:15:01.815+09:00  INFO 15308 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T15:15:02.155+09:00  INFO 15308 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T15:15:02.192+09:00  INFO 15308 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T15:15:02.483+09:00  INFO 15308 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380e33c2
+2025-03-17T15:15:02.485+09:00  INFO 15308 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T15:15:02.529+09:00  WARN 15308 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T15:15:02.549+09:00  INFO 15308 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T15:15:02.558+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3dad535f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5f67181f)
+2025-03-17T15:15:02.559+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1169fdfd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75add13c)
+2025-03-17T15:15:02.559+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@224d537d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@450d10cb)
+2025-03-17T15:15:02.559+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1bd59b82) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6a9df5)
+2025-03-17T15:15:02.560+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@48f4f03e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65d23aa3)
+2025-03-17T15:15:02.560+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@52eca410) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@63d0e8d)
+2025-03-17T15:15:02.561+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@69a76b74) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1dd443c1)
+2025-03-17T15:15:02.561+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2aafa84f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@448892f1)
+2025-03-17T15:15:02.561+09:00 DEBUG 15308 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1626bddf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@29532e91)
+2025-03-17T15:15:03.408+09:00  INFO 15308 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T15:15:03.456+09:00  INFO 15308 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T15:15:03.809+09:00  INFO 15308 --- [ch07] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-17T15:15:04.508+09:00  WARN 15308 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T15:15:04.531+09:00  INFO 15308 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T15:15:04.904+09:00  INFO 15308 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.651 seconds (process running for 5.871)
+2025-03-17T15:15:05.488+09:00  INFO 15308 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T15:15:05.490+09:00  INFO 15308 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T15:15:05.499+09:00  INFO 15308 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-17T15:33:20.323+09:00  INFO 16892 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Starting User1RepositoryTest using Java 17.0.12 with PID 16892 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch07)
+2025-03-17T15:33:20.325+09:00  INFO 16892 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T15:33:20.942+09:00  INFO 16892 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T15:33:21.013+09:00  INFO 16892 --- [ch07] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-03-17T15:33:21.485+09:00  INFO 16892 --- [ch07] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T15:33:21.546+09:00  INFO 16892 --- [ch07] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T15:33:21.581+09:00  INFO 16892 --- [ch07] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T15:33:21.917+09:00  INFO 16892 --- [ch07] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T15:33:21.951+09:00  INFO 16892 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T15:33:22.256+09:00  INFO 16892 --- [ch07] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380e33c2
+2025-03-17T15:33:22.259+09:00  INFO 16892 --- [ch07] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T15:33:22.323+09:00  WARN 16892 --- [ch07] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-17T15:33:22.351+09:00  INFO 16892 --- [ch07] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T15:33:22.362+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3dad535f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5f67181f)
+2025-03-17T15:33:22.362+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1169fdfd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75add13c)
+2025-03-17T15:33:22.362+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@224d537d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@450d10cb)
+2025-03-17T15:33:22.363+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1bd59b82) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6a9df5)
+2025-03-17T15:33:22.363+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@48f4f03e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65d23aa3)
+2025-03-17T15:33:22.363+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@52eca410) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@63d0e8d)
+2025-03-17T15:33:22.364+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@69a76b74) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1dd443c1)
+2025-03-17T15:33:22.364+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2aafa84f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@448892f1)
+2025-03-17T15:33:22.365+09:00 DEBUG 16892 --- [ch07] [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1626bddf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@29532e91)
+2025-03-17T15:33:23.214+09:00  INFO 16892 --- [ch07] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T15:33:23.262+09:00  INFO 16892 --- [ch07] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T15:33:23.590+09:00  INFO 16892 --- [ch07] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-17T15:33:24.455+09:00  WARN 16892 --- [ch07] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T15:33:24.480+09:00  INFO 16892 --- [ch07] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-17T15:33:24.871+09:00  INFO 16892 --- [ch07] [Test worker] k.c.ch07.repository.User1RepositoryTest  : Started User1RepositoryTest in 4.855 seconds (process running for 6.023)
+2025-03-17T15:33:25.450+09:00  INFO 16892 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T15:33:25.453+09:00  INFO 16892 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-17T15:33:25.460+09:00  INFO 16892 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
